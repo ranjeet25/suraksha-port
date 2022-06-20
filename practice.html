@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <section class="vehicles" id="question">
+        <h1 class="heading">Analysis <span> Queries</span></h1>
+        <div class="accordion">
+          <div class="accordion-item">
+            <a href="{% url 'result1' %}" class="hvr-forward"
+              ><i class="far fa-hand-point-right"></i> &nbsp; Which is the Best
+              Mileage Car
+            </a>
+          </div>
+          <div class="accordion-item">
+            <a href="{% url 'result2' %}" class="hvr-forward"
+              ><i class="far fa-hand-point-right"></i> &nbsp;Car's showcased according
+              to the Selling Price Range (Min)</a
+            >
+          </div>
+          <div class="accordion-item">
+            <a href="{% url 'result3' %}" class="hvr-forward"
+              ><i class="far fa-hand-point-right"></i> &nbsp;Car's showcased according
+              to the Selling Price Range (Max)</a
+            >
+          </div>
+          <div class="accordion-item">
+            <a href="{% url 'result4' %}" class="hvr-forward"
+              ><i class="far fa-hand-point-right"></i> &nbsp;The Highest Selling Price
+              cars?</a
+            >
+          </div>
+          <div class="accordion-item">
+            <a href="{% url 'result5' %}" class="hvr-forward"
+              ><i class="far fa-hand-point-right"></i> &nbsp;Which are the High Power
+              and Low Selling Price car models?</a
+            >
+          </div>
+          <div class="accordion-item">
+            <a href="{% url 'result6' %}" class="hvr-forward"
+              ><i class="far fa-hand-point-right"></i> &nbsp;Which are the Max Mileage
+              and Max Power car models?</a
+            >
+          </div>
+          <div class="accordion-item">
+            <a href="{% url 'result7' %}" class="hvr-forward"
+              ><i class="far fa-hand-point-right"></i> &nbsp;Which are the Max Engine
+              and Max Power car models?</a
+            >
+          </div>
+          <div class="accordion-item">
+            <a href="{% url 'result8' %}" class="hvr-forward"
+              ><i class="far fa-hand-point-right"></i> &nbsp;Which are the Max Mileage
+              and Max Engine car models?</a
+            >
+          </div>
+          <div class="accordion-item">
+            <a href="{% url 'prediction' %}" class="hvr-forward"
+              ><i class="far fa-hand-point-right"></i> &nbsp;Price Prediction of car
+              models using ML ?</a
+            >
+          </div>
+          <div class="accordion-item">
+            <a href="" class="hvr-forward"
+              ><i class="far fa-hand-point-right"></i> &nbsp;India market size of
+              Automobiles by 2030?</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- question section ends -->
+      <!-- service section -->
+      <section class="services" id="services">
+        <h1 class="heading">our <span>services</span></h1>
+        <div class="box-container">
+          <div class="box">
+            <i class="fas fa-analytics"></i>
+            <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
+            <!-- <i class="fa-solid fa-chart-line"></i> -->
+            <!-- <i class="fa-solid fa-chart-pie-simple"></i> -->
+            <h3>Data Anaylsis</h3>
+            <p>
+              The customers can take an overview of the predefined essential points
+              before buying a car.
+            </p>
+            <a href="#services" class="btn"> read more</a>
+          </div>
+          <div class="box">
+            <i class="far fa-money-check-edit-alt"></i>
+            <h3>Price Prediction</h3>
+            <p>
+              The selling price of the car models can be predicted by the customers by
+              inputing some car specifications.
+            </p>
+            <a href="#services" class="btn"> read more</a>
+          </div>
+          <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>chatbot support</h3>
+            <p>
+              The chatbot support provide a summary of the data analysis and general
+              market question.
+            </p>
+            <a href="#services" class="btn"> read more</a>
+          </div>
+          <div class="box">
+            <i class="far fa-person-carry"></i>
+            <h3>Contact support</h3>
+            <p>
+              Customers having specific queries regarding the analysis can directly
+              contact to the support team .
+            </p>
+            <a href="#services" class="btn"> read more</a>
+          </div>
+        </div>
+      </section>
+
+    <canvas id="myChart" width="200" height="700"></canvas>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'polarArea',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 12, 3],
+                    backgroundColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(255, 159, 64)',
+                        'rgb(255, 205, 86)',
+                        'rgb(75, 192, 192)',
+                        'rgb(54, 162, 235)',
+                        'rgb(153, 102, 255)'
+                    ],
+                    borderColor: [
+                        'rgba(25, 25, 25, 25)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 10
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

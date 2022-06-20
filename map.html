@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Crime-Hotspot</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title"><b>PREDPOL</b></div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="visual.html" target="_blank">Analysis</a>
+        <a href="map.html" target="_blank">Crime Map</a>
+        <a href="#" target="_blank">Security</a>
+        <a href="#" target="_blank">About us</a>
+      </div>
+    </div>
+    <section class="map-section">
+      <h1 class="map-heading">Hospot Generation of Crimes in City</h1>
+
+      <div class="map-div">
+        <iframe
+          class="graph"
+          scrolling="no"
+          style="border: none"
+          seamless="seamless"
+          src="https://plotly.com/~hrishi332/80.embed"
+          height="750"
+          width="1200px"
+        ></iframe>
+      </div>
+
+      <h1 class="map-heading">Hospot Generation of Crimes in City 2</h1>
+      <div class="map-div-2">
+        <iframe
+          class="graph"
+          scrolling="no"
+          style="border: none"
+          seamless="seamless"
+          src="https://plotly.com/~hrishi332/55.embed"
+          height="750"
+          width="1200px"
+        ></iframe>
+      </div>
+    </section>
+  </body>
+</html>
