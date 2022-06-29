@@ -14,8 +14,7 @@ import plotly.express as px
 
 import chart_studio
 import chart_studio.plotly as py
-username = 'hrishi332'
-api_key = 'CFUwESfbKWWspeJJ8ye8' 
+#Personal Credentials are hidden   
 chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
 
 
