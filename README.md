@@ -14,3 +14,11 @@
 ✅ The crime mapping works on a dynamic model which contains the different types of filteration and slicers to explore the crime hotspot in the particular region.  
 
 ✅ The second feature is Crime analysis which works on the predefined questions.
+
+-----
+
+# Crime_Streamlit
+
+Web App link : https://suraksha-port.herokuapp.com/
+
+Welcome to suraksha-port it is a web app that works on real time dataset. You can provide a dataset on crime related parameters and it will return a geospatial analysis of the data. Along with that you can tweak the analysis with slicers provided for year type etc.
