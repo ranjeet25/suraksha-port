@@ -101,8 +101,6 @@ Start the server
 ![crime exploration](https://raw.githubusercontent.com/ranjeet25/Hack-raipur/main/Screenshots/crime%20exploration%201.png)
 ![crime marking 1](https://raw.githubusercontent.com/ranjeet25/Hack-raipur/main/Screenshots/crime%20markers.png)
 ![crime marking](https://raw.githubusercontent.com/ranjeet25/Hack-raipur/main/Screenshots/crime%20markers%20(2).png)
-- About Us
-![About Us](https://raw.githubusercontent.com/ranjeet25/Hack-raipur/main/Screenshots/about%20us.png)
 
 
 ## Authors
