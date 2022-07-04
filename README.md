@@ -5,7 +5,7 @@
 
 
 
-![Suraksha Port](https://raw.githubusercontent.com/ranjeet25/Hack-raipur/main/Screenshots/Suraksha%20Port.png)
+![Suraksha Port](https://raw.githubusercontent.com/ranjeet25/Hack-raipur/main/Screenshots/Suraksha%20port%20logo.png)
 
 
 
